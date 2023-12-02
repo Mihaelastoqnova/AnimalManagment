@@ -62,5 +62,3 @@ public abstract class BaseAnimal implements Animal{
     public abstract void eat();
 }
 
-
-}
