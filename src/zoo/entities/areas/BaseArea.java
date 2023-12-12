@@ -17,8 +17,8 @@ public class BaseArea implements Area {
     public BaseArea(String name, int capacity) {
         this.name = name;
         this.capacity = capacity;
-        this.foods = new ArrayList<>(); //?
-        this.animals = new ArrayList<>(); //?
+        this.foods = new ArrayList<>();
+        this.animals = new ArrayList<>(); 
     }
 
     @Override
