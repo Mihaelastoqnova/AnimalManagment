@@ -1,10 +1,24 @@
 package zoo.core;
 
-public class ControllerImpl implements Controller {
+import zoo.entities.areas.Area;
+import zoo.repositories.FoodRepository;
+import zoo.repositories.FoodRepositoryImpl;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class ControllerImpl implements Controller {
+    private FoodRepository foodRepository;
+    private Map<String, Area> areas;
+
+    public ControllerImpl() {
+        this.foodRepository = new FoodRepositoryImpl();
+        this.areas = new LinkedHashMap<>();
+    }
 
     @Override
     public String addArea(String areaType, String areaName) {
+
         return null;
     }
 
